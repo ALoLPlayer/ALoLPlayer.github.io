@@ -1,0 +1,211 @@
+/* Minecraft Font */
+@font-face {
+    font-family: 'Minecraft';
+    src: url('fonts/Minecraft/Minecraft.ttf') format('truetype');
+    font-style: normal;
+}
+
+/* Gill Sans MT Font */
+@font-face {
+    font-family: 'Gill Sans MT';
+    src: url('fonts/Gill Sans MT/GIL_____.TTF') format('truetype');
+    font-style: normal;
+}
+/* @font-face {
+    font-family: 'Gill Sans MT Bold';
+    src: url('fonts/Gill Sans MT/GILB____.TTF') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gill Sans MT Bold Italic';
+    src: url('fonts/Gill Sans MT/GILBI___.TTF') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gill Sans Condensed';
+    src: url('fonts/Gill Sans MT/GILC____.TTF') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gill Sans Italic';
+    src: url('fonts/Gill Sans MT/GILI____.TTF') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gill Sans MT Ext Condensed Bold';
+    src: url('fonts/Gill Sans MT/GLSNECB.TTF') format('truetype');
+    font-style: normal;
+} */
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Gill Sans MT';
+}
+
+body {
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.navbar {
+    padding: 20px 60px;
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    background-image: url(images/background.png);
+    width: 100%;
+    z-index: 10;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.img_logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50px;
+}
+
+.h1_name {
+    font-size: 50px;
+}
+
+.img_menu {
+    filter: pink;
+    display: flex;
+    width: 30px;
+
+}
+
+.sect {
+
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0px 60px;
+    gap: 50px;
+    align-content: center;
+    align-items: center;
+}
+
+.h1_desc {
+    font-size: 60px;
+}
+
+.dlbutton {
+    background-color: darkslategrey;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 0px;
+    border-style: solid;
+}
+
+.img_dev {
+    width: 110px;
+    text-align: center;
+
+}
+
+.h1_jiktitle {
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+
+}
+
+.h1_jik {
+    font-size: 40px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.profile {
+    padding: 30px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto ;
+}
+
+.team {
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.sect#home{
+    grid-template-columns: auto;
+    gap: 0px;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-device-width: 581px) {
+
+
+    div.sect{
+        grid-template-columns: auto;
+        padding: 0px 20px;
+        padding-top: 75px;
+        align-items: center;
+    }
+    .navbar{
+        padding: 1px;
+        align-items: center;
+    }
+ 
+    .img_logo {
+        width: 50px; 
+    }
+    
+    .h1_name {
+        font-size: 16px; 
+    }
+    
+    .dlbutton {
+        font-size: 12px;
+    }
+    
+}
+
+/* RESPONSIVE TABLET */
+@media only screen and (max-width: 768px) {
+
+    div.sect{
+        grid-template-columns: auto;
+        padding: 0px 20px;
+        padding-top: 75px;
+    }
+    .navbar{
+        padding: 20px;
+        display: flex;
+    }
+
+    .team{
+        grid-template-columns: auto;
+    }
+}
+ 
+/* @media only screen and (max-width: 1090px){
+    .team{
+        grid-template-columns: auto;
+    }
+} */
