@@ -85,13 +85,6 @@ body {
     font-size: 50px;
 }
 
-.img_menu {
-    filter: pink;
-    display: flex;
-    width: 30px;
-
-}
-
 .sect {
 
     height: 100%;
@@ -226,6 +219,7 @@ body {
         padding: 0px 20px;
         padding-top: 75px;
         align-items: center;
+        font-size: 10px;
     }
     .navbar{
         padding: 20px;
@@ -255,7 +249,7 @@ body {
     }
 }
 
-@media only screen and (max-device-width: 652px) {
+@media only screen and (max-device-width: 653px) {
     .navbar{
         padding: px;
         align-items: center;
@@ -272,5 +266,19 @@ body {
     .dlbutton {
         font-size: 12px;
     }
+
+    .h1_desc {
+        font-size: 25px;
+    }
+
+    .h1_jiktitle {
+        font-size: 30px;
+    }
+
+    .h1_jik {
+        font-size: 25px;
+    }
+
+
 
 }
