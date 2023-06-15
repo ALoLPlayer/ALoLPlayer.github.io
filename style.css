@@ -37,8 +37,6 @@
     font-style: normal;
 } */
 
-
-
 * {
     padding: 0;
     margin: 0;
@@ -210,9 +208,8 @@ body {
 
 
 }
-     
 
-@media only screen and (max-device-width: 584px) {
+@media only screen and (max-device-width: 586px) {
 
     div.sect{
         grid-template-columns: auto;
@@ -222,7 +219,7 @@ body {
         font-size: 10px;
     }
     .navbar{
-        padding: 20px;
+        padding: px;
         display: flex;
         align-items: center;
     }
@@ -278,7 +275,5 @@ body {
     .h1_jik {
         font-size: 25px;
     }
-
-
-
 }
+
