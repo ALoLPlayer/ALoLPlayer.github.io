@@ -51,6 +51,10 @@
     font-family: 'Gill Sans MT';
 }
 
+div.sect#start {
+    padding-top: 75px;
+}
+
 body {
     background-image: url(images/background.png);
     background-size: cover;
@@ -128,7 +132,6 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
-
 }
 
 .h1_jik {
@@ -152,14 +155,71 @@ body {
     grid-template-columns: auto auto;
 }
 
-.sect#home{
-    grid-template-columns: auto;
-    gap: 0px;
+@media (max-device-width: 320px) {
+
+    div.sect{
+        grid-template-columns: auto;
+        padding: 0px 20px;
+        padding-top: 75px;
+        align-items: center;
+        font-size: 10px;
+    }
+    .navbar{
+        padding: 10px;
+        align-items: center;
+    }
+ 
+    .img_logo {
+        width: 50px; 
+    }
+    
+    .h1_name {
+        font-size: 16px; 
+    }
+    
+    .dlbutton {
+        font-size: 12px;
+    }
+
+    .h1_desc {
+        font-size: 25px;
+    }
+
+    .h1_jiktitle {
+        font-size: 30px;
+    }
+
+    .h1_jik {
+        font-size: 25px;
+    }
 }
 
-/* RESPONSIVE MOBILE */
-@media (max-device-width: 581px) {
+@media only screen and (max-device-width: 502px) {
+    div.sect{
+        grid-template-columns: auto;
+        padding: 0px 20px;
+        padding-top: 75px;
+        align-items: center;
+        font-size: 10px;
+    }
 
+    .h1_desc {
+        font-size: 25px;
+    }
+
+    .h1_jiktitle {
+        font-size: 30px;
+    }
+
+    .h1_jik {
+        font-size: 25px;
+    }
+
+
+}
+     
+
+@media only screen and (max-device-width: 584px) {
 
     div.sect{
         grid-template-columns: auto;
@@ -167,6 +227,16 @@ body {
         padding-top: 75px;
         align-items: center;
     }
+    .navbar{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .team{
+        grid-template-columns: auto;
+    }
+
     .navbar{
         padding: 1px;
         align-items: center;
@@ -183,29 +253,24 @@ body {
     .dlbutton {
         font-size: 12px;
     }
-    
 }
 
-/* RESPONSIVE TABLET */
-@media only screen and (max-width: 768px) {
-
-    div.sect{
-        grid-template-columns: auto;
-        padding: 0px 20px;
-        padding-top: 75px;
-    }
+@media only screen and (max-device-width: 652px) {
     .navbar{
-        padding: 20px;
-        display: flex;
+        padding: px;
+        align-items: center;
+    }
+ 
+    .img_logo {
+        width: 50px; 
+    }
+    
+    .h1_name {
+        font-size: 16px; 
+    }
+    
+    .dlbutton {
+        font-size: 12px;
     }
 
-    .team{
-        grid-template-columns: auto;
-    }
 }
- 
-/* @media only screen and (max-width: 1090px){
-    .team{
-        grid-template-columns: auto;
-    }
-} */
